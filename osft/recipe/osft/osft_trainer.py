@@ -169,10 +169,11 @@ class RayOSFTTrainer(RayPPOTrainer):
                     batch.batch["response_mask"] = compute_response_mask(batch)
 
                     # compute scores using function-based reward 'model'
-                    reward_tensor = self.reward_fn(batch)
-                    batch.batch["token_level_scores"] = reward_tensor
-                    # we do not have adv, therefore we use scores as rewards
-                    batch.batch["token_level_rewards"] = batch.batch["token_level_scores"]
+                    if self.config.trainer.enable_train_reward and self.reward_fn is not None:
+                        reward_tensor = self.reward_fn(batch)
+                        batch.batch["token_level_scores"] = reward_tensor
+                        # we do not have adv, therefore we use scores as rewards
+                        batch.batch["token_level_rewards"] = batch.batch["token_level_scores"]
 
                     # Balance the number of valid tokens across DP ranks.
                     # NOTE: This usually changes the order of data in the `batch`,

@@ -10,6 +10,7 @@ defaults:
 
 trainer:
   enable_train_temperature: false # make tau_t=tau_s or not, default is set them different and tau_t=1
+  enable_train_reward: false # logging training rollout reward or not
 
 actor_rollout_ref:
   actor:

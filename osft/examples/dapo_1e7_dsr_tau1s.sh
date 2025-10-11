@@ -58,13 +58,15 @@ OUTPUT_DIR="${ROOT_DIR}/outputs/${MODEL}/${TASK}/${EXPERIMENT}/${DATE}"
 mkdir -p ${OUTPUT_DIR}
 
 EXP="${TASK}-${MODEL_ID}-${EXPERIMENT}-lr${LR}-TAUS${TAU_S}-rollout${ROLLOUT_N}-${DATE}"
-LOG_FILE="${ROOT_DIR}/logs/${EXP}.log"
+# LOG_FILE="${ROOT_DIR}/logs/${EXP}.log"
 
 
 export SWANLAB_API_KEY="your_swanlab_api_key"
 export SWANLAB_LOG_DIR=${ROOT_DIR}/logs/swanlab/${EXP}
 export SWANLAB_MODE=cloud
 
+mkdir -p ${SWANLAB_LOG_DIR}
+LOG_FILE="${SWANLAB_LOG_DIR}/log.txt"
 
 CUDA_VISIBLE_DEVICES=${VISIBLE_DEVICES} \
 python3 -m recipe.dapo.main_dapo \

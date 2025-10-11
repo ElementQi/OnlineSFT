@@ -208,3 +208,5 @@ __marimo__/
 
 outputs
 logs
+*.out
+*.sh

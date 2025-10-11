@@ -43,12 +43,15 @@ OUTPUT_DIR="${ROOT_DIR}/outputs/${MODEL}/${TASK}/${EXPERIMENT}/${DATE}"
 mkdir -p ${OUTPUT_DIR}
 
 EXP="${TASK}-${MODEL_ID}-${EXPERIMENT}-lr${LR}-TAUS${TAU_S}-rollout${ROLLOUT_N}-ttr${ENABLE_TRAIN_TEMP}-${DATE}"
-LOG_FILE="${ROOT_DIR}/logs/${EXP}.log"
+# LOG_FILE="${ROOT_DIR}/logs/${EXP}.log"
 
 
 export SWANLAB_API_KEY="your_swanlab_api_key"
 export SWANLAB_LOG_DIR=${ROOT_DIR}/logs/swanlab/${EXP}
 export SWANLAB_MODE=cloud
+
+mkdir -p ${SWANLAB_LOG_DIR}
+LOG_FILE="${SWANLAB_LOG_DIR}/log.txt"
 
 # if you want to use swanlab or wandb tracking
 # try to modify the `trainer.logger=['console','swanlab']` below

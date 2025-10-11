@@ -86,6 +86,8 @@ for index in ${!MODEL_NAMES[@]}; do
         # export SWANLAB_API_KEY="your_swanlab_api_key"
         # export SWANLAB_LOG_DIR=${ROOT_DIR}/logs/swanlab/${EXP}
         # export SWANLAB_MODE=cloud
+        # mkdir -p ${SWANLAB_LOG_DIR}
+        # LOG_FILE="${SWANLAB_LOG_DIR}/log.txt"
 
 
         CUDA_VISIBLE_DEVICES=${VISIBLE_DEVICES} \
