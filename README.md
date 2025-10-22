@@ -4,6 +4,11 @@
     <td style="width: 45%;"><img src="figures/qwenmath_2pic.png" alt="base_figure" style="width: 100%;"></td>
     <td style="width: 45%;"><img src="figures/average_performance_with_baselines.png" alt="training_figure" style="width: 100%;"></td>
   </tr>
+  <tr>
+    <td colspan="2" style="text-align: center;">
+      <img src="figures/prob.png" alt="probability_results" style="width: 100%;">
+    </td>
+  </tr>
 </table>
 
 
