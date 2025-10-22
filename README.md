@@ -9,7 +9,7 @@
 
 # Online SFT
 
-Code for [Online SFT for LLM Reasoning](https://arxiv.org/abs/2509.xxxxx).
+Code for [Online SFT for LLM Reasoning: Surprising Effectiveness of Self-Tuning without Rewards](https://arxiv.org/abs/2510.18814).
 
 OSFT is a self-help, reward-free method that improves LLM reasoning by finetuning the model on its own generated responses.
 
@@ -113,10 +113,10 @@ For verifier, we used the verifier from [The Entropy Mechanism of Reinforcement 
 If you find our work useful, please consider citing our paper:
 
 ```bibtex
-@article{placeholder,
-  title   = {Online SFT for LLM Reasoning},
-  author  = {placeholder},
-  journal = {arXiv preprint arXiv:2509.xxxxx},
+@article{li2025onlinesftllmreasoning,
+  title   = {Online SFT for LLM Reasoning: Surprising Effectiveness of Self-Tuning without Rewards},
+  author  = {Mengqi Li and Lei Zhao and Anthony Man-Cho So and Ruoyu Sun and Xiao Li},
+  journal = {arXiv preprint arXiv:2510.18814},
   year    = {2025}
 }
 ```
