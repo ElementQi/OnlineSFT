@@ -83,7 +83,7 @@ bash examples/offline_train.sh
 
 For evaluation, we re-write the evaluation code for `_validate` function inside the Trainer. And if you want to evaluate a specific checkpoint or base model, try to use `examples/trained_model_sweep.sh` and `examples/base_model_sweep.sh`.
 
-If you want to transform the training checkpoints via verl, you should follow the instructions from [verl official tutorial for model converting](https://verl.readthedocs.io/en/latest/advance/checkpoint.html#convert-fsdp-and-megatron-checkpoints-to-huggingface-format-model). The model merge script is located in [here](https://github.com/volcengine/verl/blob/main/scripts/legacy_model_merger.py).
+If you want to transform the training checkpoints via verl, you should follow the instructions from [verl official tutorial for model converting](https://verl.readthedocs.io/en/latest/advance/checkpoint.html#convert-fsdp-and-megatron-checkpoints-to-huggingface-format-model). The model merge script is located in [here](https://github.com/verl-project/verl/blob/main/scripts/legacy_model_merger.py).
 
 ## Dataset
 
@@ -112,10 +112,10 @@ We also provide a second version in `sept/data_user_reasoning`. It has the same 
 
 ## Source Acknowledgement
 
-This repository is built based on [VERL](https://github.com/volcengine/verl) at commit hash `38d9a88170786a45cb189a08290c4651e6d6f671`. 
+This repository is built based on [VERL](https://github.com/verl-project/verl) at commit hash [`38d9a88170786a45cb189a08290c4651e6d6f671`](https://github.com/verl-project/verl/commit/38d9a88170786a45cb189a08290c4651e6d6f671). 
 
 
-For verifier, we used the verifier from [The Entropy Mechanism of Reinforcement Learning for Large Language Model Reasoning.](https://arxiv.org/pdf/2505.22617), which uses [HuggingFace Math-Verify](https://github.com/huggingface/Math-Verify). The source code could be found in [VERL entropy recipe](https://github.com/volcengine/verl/tree/main/recipe/entropy/reward_score/entropy_math).
+For verifier, we used the verifier from [The Entropy Mechanism of Reinforcement Learning for Large Language Model Reasoning.](https://arxiv.org/pdf/2505.22617), which uses [HuggingFace Math-Verify](https://github.com/huggingface/Math-Verify). The source code could be found in [VERL entropy recipe](https://github.com/verl-project/verl-recipe/tree/e7f889574b8301cc0f0fc1d57c6d67f31ffeb689/entropy).
 
 
 ## Citation

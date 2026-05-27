@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use SePT or build on this codebase, please cite the paper below."
+title: "SePT: Self-Evolving Post-Training"
+repository-code: "https://github.com/ElementQi/SePT"
+license: "Apache-2.0"
+authors:
+  - family-names: "Li"
+    given-names: "Mengqi"
+  - family-names: "Zhao"
+    given-names: "Lei"
+  - family-names: "So"
+    given-names: "Anthony Man-Cho"
+  - family-names: "Sun"
+    given-names: "Ruoyu"
+  - family-names: "Li"
+    given-names: "Xiao"
+preferred-citation:
+  type: article
+  title: "A Model Can Help Itself: Reward-Free Self-Training for LLM Reasoning"
+  authors:
+    - family-names: "Li"
+      given-names: "Mengqi"
+    - family-names: "Zhao"
+      given-names: "Lei"
+    - family-names: "So"
+      given-names: "Anthony Man-Cho"
+    - family-names: "Sun"
+      given-names: "Ruoyu"
+    - family-names: "Li"
+      given-names: "Xiao"
+  journal: "arXiv preprint arXiv:2510.18814"
+  year: 2026
+  doi: "10.48550/arXiv.2510.18814"
+  url: "https://arxiv.org/abs/2510.18814"

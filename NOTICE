@@ -1,0 +1,40 @@
+SePT
+Copyright 2025-2026 SePT authors
+
+SePT is research code for:
+
+    Mengqi Li, Lei Zhao, Anthony Man-Cho So, Ruoyu Sun, and Xiao Li.
+    "A Model Can Help Itself: Reward-Free Self-Training for LLM Reasoning."
+    arXiv:2510.18814.
+    https://arxiv.org/abs/2510.18814
+
+Unless otherwise noted, the source code in this repository is licensed under
+the Apache License, Version 2.0. See LICENSE.
+
+Unless otherwise noted, the paper, documentation, and repository figures
+authored by the SePT authors are licensed under CC BY 4.0. See LICENSE-DOCS.
+
+This repository includes and modifies software from VERL:
+
+    VERL: Volcano Engine Reinforcement Learning for LLM
+    https://github.com/verl-project/verl
+    Base commit: 38d9a88170786a45cb189a08290c4651e6d6f671
+    Base commit URL:
+    https://github.com/verl-project/verl/commit/38d9a88170786a45cb189a08290c4651e6d6f671
+    Copyright 2024 Bytedance Ltd. and/or its affiliates
+    Licensed under the Apache License, Version 2.0
+
+Project-level SePT modifications include, among other changes:
+
+    - SePT training logic under sept/recipe/sept/
+    - Cross-entropy/self-training actor updates under sept/recipe/sept/dp_actor.py
+    - Validation and pass@k logic in sept/verl/trainer/ppo/
+    - Verifier integration under sept/verl/utils/reward_score/
+    - Example scripts and datasets for SePT experiments under sept/
+
+Verifier-related code uses or adapts components from VERL entropy recipes and
+HuggingFace Math-Verify, as documented in README.md and THIRD_PARTY_NOTICES.md.
+
+Downstream distributions of this repository or substantial portions of this
+repository should retain this NOTICE file, the LICENSE file, applicable file
+headers, and notices for third-party components.
